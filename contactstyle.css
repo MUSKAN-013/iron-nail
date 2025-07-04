@@ -1,0 +1,57 @@
+ /* Custom styles to define the rust color and apply the font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Defining custom rust colors for use with Tailwind's arbitrary value support */
+        .bg-rust-700 { background-color: #9a3412; } /* A deep rust color */
+        .hover\:bg-rust-800:hover { background-color: #7c2d12; } /* A darker rust for hover */
+        .border-rust-600 { border-color: #c2410c; } /* A slightly brighter rust for borders/rings */
+        .ring-rust-600 { --tw-ring-color: #c2410c; } /* For focus rings */
+        .text-rust-500 { color: #dd6b20; } /* A brighter rust for text */
+        /* navbar */
+ .navbar {
+  background: rgba(0, 0, 0, 0.6); /* semi‑transparent background */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #c27a3d;; /* gold accent */
+}
+/* ----------  FOOTER  ---------- */
+footer {
+  text-align: center;
+  font-size: .875rem;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid #262626;
+} 
